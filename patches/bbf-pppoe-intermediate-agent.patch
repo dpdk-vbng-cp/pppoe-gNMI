@@ -1,0 +1,44 @@
+Submodule yang contains modified content
+Submodule standard/bbf contains modified content
+diff --git a/yang/standard/bbf/standard/networking/bbf-pppoe-intermediate-agent.yang b/yang/standard/bbf/standard/networking/bbf-pppoe-intermediate-agent.yang
+index 25b6b96..824235d 100644
+--- a/yang/standard/bbf/standard/networking/bbf-pppoe-intermediate-agent.yang
++++ b/yang/standard/bbf/standard/networking/bbf-pppoe-intermediate-agent.yang
+@@ -16,9 +16,9 @@ module bbf-pppoe-intermediate-agent {
+     prefix bbf-yang;
+   }
+ 
+-  import bbf-if-type {
+-    prefix bbfift;
+-  }
++//  import bbf-if-type {
++//    prefix bbfift;
++//  }
+ 
+   import bbf-subscriber-types {
+     prefix bbf-subtype;
+@@ -254,15 +254,15 @@ module bbf-pppoe-intermediate-agent {
+             "TR-178 - R120";
+         }
+ 
+-        leaf access-loop-subtags {
+-          type bbf-subtype:broadband-line-characteristics;
+-          default "";
+-          description
+-            "Access Loop sub-tags that are to be added in the
+-             vendor-specific tag.";
+-          reference
+-            "TR-178 - R123";
+-        }
++//        leaf access-loop-subtags {
++//          type bbf-subtype:broadband-line-characteristics;
++//          default "";
++//          description
++//            "Access Loop sub-tags that are to be added in the
++//             vendor-specific tag.";
++//          reference
++//            "TR-178 - R123";
++//        }
+ 
+         leaf start-numbering-from-zero {
+           type boolean;
